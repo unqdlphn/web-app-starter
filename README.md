@@ -174,10 +174,80 @@ st.dataframe(df)  # Display the dataframe
 Create a `.gitignore` file in the project root and add the following to exclude files that should not be committed to version control:
 
 ```
+# Created by venv; see https://docs.python.org/3/library/venv.html*
 .venv/
+# Created by virtualenv; see https://virtualenv.pypa.io/en/latest/user_guide.html
+env/
+venv/
+# Created by pyenv; see https://github.com/pyenv/pyenv#installation
+.pyenv/
+# Created by pipenv; see https://pipenv.pypa.io/en/latest/
+Pipfile
+Pipfile.lock
+# Created by poetry; see https://python-poetry.org/docs/
+poetry.lock
+# Created by pip-tools; see https://pip-tools.readthedocs.io/en/latest/requirements.html
+requirements.txt
+
+# Python cache files
 __pycache__/
-*.pyc
-data/database.db  # Consider if you want to track database changes
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Documentation
+docs/_build/
+site/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
 ```
 
 7.2. **Commit Changes:**
